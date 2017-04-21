@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Operator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html;charset=gb2312">
+
+    <!-- Bootstrap -->
+    <link href="/stylesheets/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="/stylesheets/css/thin-admin.css" rel="stylesheet" media="screen">
+    <link href="/stylesheets/css/font-awesome.css" rel="stylesheet" media="screen">
+    <link href="/stylesheets/style/style.css" rel="stylesheet">
+    <link href="/stylesheets/style/dashboard.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+
+    <script src="/assets/js/html5shiv.js"></script>
+    <script src="/assets/js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/My97DatePicker/WdatePicker.js"></script>
+
+
+    <script type="text/javascript" language="javascript" src="/js/jquery.js"></script>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="top-navbar header b-b"><a data-original-title="Toggle navigation" class="toggle-side-nav pull-left"
+                                          href="#"><i class="icon-reorder"></i> </a>
+        <!--<div class="brand pull-left"> <a href="#"style="font-size:2rem "><img src="images/CST.png" width="30" height="25"> 庆兰实业</a></div>-->
+        <div class="brand pull-left"><a href="http://www.smart-flow.cn">SmartFlow</a></div>
+
+    </div>
+</div>
+<div class="wrapper">
+    <div class="left-nav">
+        <div id="side-nav">
+            <ul id="nav">
+                <li><a href="/mainInterface"> <i class="icon-time"></i> Andon </a></li>
+                <li><a href="/catalog"> <i class="icon-desktop"></i> 主目录 </a></li>
+
+                <li><a href="#"> <i class="icon-bar-chart"></i> 折线数据分析图 <i class="arrow icon-angle-left"></i></a>
+                    <ul class="sub-menu">
+                        <li> <a href="/outputM/1/2"> <i class="icon-bar-chart"></i> 1线产量</a></li>
+                        <li> <a href="/outputM/3/4"> <i class="icon-bar-chart"></i> 2线产量</a></li>
+                        <li> <a href="/brokenDownTimeRate/1/2"> <i class="icon-bar-chart"></i> 1线故障率</a></li>
+                        <li> <a href="/brokenDownTimeRate/3/4"> <i class="icon-bar-chart"></i> 2线故障率</a></li>
+                        <li> <a href="/timeRate/1/2"> <i class="icon-bar-chart"></i> 1线时间稼动率</a></li>
+                        <li> <a href="/timeRate/3/4"> <i class="icon-bar-chart"></i> 2线时间稼动率</a></li>
+                        <li> <a href="/performanceRate/1/2"> <i class="icon-bar-chart"></i> 1线性能稼动率</a></li>
+                        <li> <a href="/performanceRate/3/4"> <i class="icon-bar-chart"></i> 2线性能稼动率</a></li>
+                        <li> <a href="/passRate/1/2"> <i class="icon-bar-chart"></i> 1线良品率</a></li>
+                        <li> <a href="/passRate/3/4"> <i class="icon-bar-chart"></i> 2线良品率</a></li>
+                        <li> <a href="/oeeM/1/2"> <i class="icon-bar-chart"></i> 1线OEE</a></li>
+                        <li> <a href="/oeeM/3/4"> <i class="icon-bar-chart"></i> 2线OEE</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/productShiftInput"> <i class="icon-edit"></i> 当班输入 </a>
+
+                </li>
+
+                <li><a href="#"> <i class="icon-table"></i> 历史查询 <i class="arrow icon-angle-left"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="/history"><i class="icon-table"></i>日数据历史查询</a></li>
+                        <li><a href="/ShiftInputHistory"><i class="icon-table"></i>班数据历史查询</a></li>
+                    </ul>
+
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="page-title">Operator
+                        <small>SmartFlow</small>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="widget">
+                        <div class="widget-header"><i class="icon-align-left"></i>
+                            <h3>Inputs </h3>
+                        </div>
+                        <div class="widget-content">
+
+                            <!--<form method="post" class="form-horizontal">-->
+                            <fieldset>
+                                <legend class="section">历史查询修改</legend>
+
+                                <form action="/EditHistory/update" method="post">
+                                <div class="row">
+                                    <!--<div class="control-group">-->
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-2">
+                                        <a style="font-size: 1.7rem">ID</a>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group" style="float: left">
+                                            <input type="number" value="<%= data.id %>" id="Id" name="id"
+                                                   style="width: 200px" placeholder=" ">
+                                        </div>
+                                    </div>
+                                    <!--</div>-->
+                                </div>
+
+
+
+
+                                    <div class="row">
+                                        <!--<div class="control-group">-->
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-2">
+                                            <a style="font-size: 1.7rem">线体名</a>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group" style="float: left">
+                                                <input type="number" value="<%= data.lineId %>" id="lineId" name="lineId"
+                                                       style="width: 200px" placeholder=" ">
+                                            </div>
+                                        </div>
+                                        <!--</div>-->
+                                    </div>
+                                    <div class="row">
+                                        <!--<div class="control-group">-->
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-2">
+                                            <a style="font-size: 1.7rem">产量</a>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group" style="float: left">
+                                                <input type="number" value="<%= data.output %>" id="output" name="output"
+                                                       style="width: 200px" placeholder=" ">
+                                            </div>
+                                        </div>
+                                        <!--</div>-->
+                                    </div>
+
+                                    <div class="row">
+
+
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-2">
+                                            <a style="font-size: 1.7rem">良品率</a>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group" style="float: left">
+                                                <input type="text" value="<%= data.passRate %>" id="passRate" name="passRate"
+                                                       style="width:200px" placeholder=" ">
+                                            </div>
+                                        </div>
+                                        <!--</div>-->
+                                    </div>
+
+                                    <div class="row">
+
+
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-2">
+                                            <a style="font-size: 1.7rem">故障率</a>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group" style="float: left">
+                                                <input type="text" value="<%= data.brokenDownTimeRate %>" id="brokenDownTimeRate" name="brokenDownTimeRate"
+                                                       style="width:200px" placeholder=" ">
+                                            </div>
+                                        </div>
+                                        <!--</div>-->
+                                    </div>
+
+                                    <div class="row">
+
+
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-2">
+                                            <a style="font-size: 1.7rem">性能嫁动率</a>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group" style="float: left">
+                                                    <input type="text" value="<%= data.performanceRate %>" id="performanceRate" name="performanceRate"
+                                                       style="width:200px" placeholder=" ">
+                                            </div>
+                                        </div>
+                                        <!--</div>-->
+                                    </div>
+
+                                    <div class="row">
+
+
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-2">
+                                            <a style="font-size: 1.7rem">时间嫁动率</a>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group" style="float: left">
+                                                <input type="text" value="<%= data.timeRate %>" id="timeRate" name="timeRate"
+                                                       style="width:200px" placeholder=" ">
+                                            </div>
+                                        </div>
+                                        <!--</div>-->
+                                    </div>
+
+                                    <div class="row">
+
+
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-2">
+                                            <a style="font-size: 1.7rem">OEE</a>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group" style="float: left">
+                                                <input type="text" value="<%= data.oee %>" id="oee" name="oee"
+                                                       style="width:200px" placeholder=" ">
+                                            </div>
+                                        </div>
+                                        <!--</div>-->
+                                    </div>
+
+                                    <div class="row">
+                                        <!--<div class="control-group">-->
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-2">
+                                            <a style="font-size: 1.7rem">生产日期</a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group"  style="float: left">
+                                                <input type="datetime" value="<%= data.dateTimeRecord.toLocaleString() %>" id="dateTimeRecord" name="dateTimeRecord" style="width: 200px"  >
+                                                <!--<input type="text" style="margin-bottom: 25px ;width:200px;" class="Wdate" id="dRecord" onfocus="WdatePicker({lang:'zh-cn',skin:'whyGreen',dateFmt:'yyyy-MM-dd HH:mm:ss',readOnly:true})"size="16" />-->
+
+                                            </div>
+
+                                            <!--<input type="text" style="margin-bottom: 25px ;width:200px;" class="Wdate" id="dRecord" onfocus="WdatePicker({lang:'zh-cn',skin:'whyGreen',dateFmt:'yyyy-MM-dd HH:mm:ss',readOnly:true})" size="16" />-->
+
+                                        </div>
+                                    </div>
+
+
+
+
+                            </fieldset>
+
+                            <div class="form-actions">
+                                <div>
+                                    <input class="btn btn-primary" id="btnsave" type="submit" style="width: 10%"
+                                           onClick="return v()" value="保存"/>
+                                    <button class="btn btn-default" type="button" style="width: 10%">退出</button>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="bottom-nav footer"><img src="images/SFlogo.png" width="33" height="20"> 2016 &copy; MesReporting By SmartFlow Team.</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+<!--<script src="js/bootstrap.min.js"></script>-->
+<!--与Jquery包冲突-->
+<!--<script type="text/javascript" src="js/smooth-sliding-menu.js"></script>-->
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/smooth-sliding-menu.js"></script>
+<script class="include" type="text/javascript" src="/javascript/jquery191.min.js"></script>
+<script class="include" type="text/javascript" src="/javascript/jquery.jqplot.min.js"></script>
+<script type="text/javascript" src="/js/ckeditor.js"></script>
+
+
+<!--switcher html start-->
+<div class="demo_changer active" style="right: 0px;">
+    <div class="demo-icon"></div>
+    <div class="form_holder">
+
+
+        <div class="predefined_styles">
+            <a class="styleswitch" rel="a" href=""><img alt="" src="/images/a.jpg"></a>
+            <a class="styleswitch" rel="b" href=""><img alt="" src="/images/b.jpg"></a>
+            <a class="styleswitch" rel="c" href=""><img alt="" src="/images/c.jpg"></a>
+            <a class="styleswitch" rel="d" href=""><img alt="" src="/images/d.jpg"></a>
+            <a class="styleswitch" rel="e" href=""><img alt="" src="/images/e.jpg"></a>
+            <a class="styleswitch" rel="f" href=""><img alt="" src="/images/f.jpg"></a>
+            <a class="styleswitch" rel="g" href=""><img alt="" src="/images/g.jpg"></a>
+            <a class="styleswitch" rel="h" href=""><img alt="" src="/images/h.jpg"></a>
+            <a class="styleswitch" rel="i" href=""><img alt="" src="/images/i.jpg"></a>
+            <a class="styleswitch" rel="j" href=""><img alt="" src="/images/j.jpg"></a>
+        </div>
+
+    </div>
+</div>
+
+
+<!--switcher html end-->
+<script src="/assets/switcher/switcher.js"></script>
+<script src="/assets/switcher/moderziner.custom.js"></script>
+<link href="/assets/switcher/switcher.css" rel="stylesheet">
+<link href="/assets/switcher/switcher-defult.css" rel="stylesheet">
+<link rel="alternate stylesheet" type="text/css" href="/assets/switcher/a.css" title="a" media="all"/>
+<link rel="alternate stylesheet" type="text/css" href="/assets/switcher/b.css" title="b" media="all"/>
+<link rel="alternate stylesheet" type="text/css" href="/assets/switcher/c.css" title="c" media="all"/>
+<link rel="alternate stylesheet" type="text/css" href="/assets/switcher/d.css" title="d" media="all"/>
+<link rel="alternate stylesheet" type="text/css" href="/assets/switcher/e.css" title="e" media="all"/>
+<link rel="alternate stylesheet" type="text/css" href="/assets/switcher/f.css" title="f" media="all"/>
+<link rel="alternate stylesheet" type="text/css" href="/assets/switcher/g.css" title="g" media="all"/>
+<link rel="alternate stylesheet" type="text/css" href="/assets/switcher/h.css" title="h" media="all"/>
+<link rel="alternate stylesheet" type="text/css" href="/assets/switcher/i.css" title="i" media="all"/>
+<link rel="alternate stylesheet" type="text/css" href="/assets/switcher/j.css" title="j" media="all"/>
+
+
+</body>
+
+<script type="text/javascript">
+    //保存事件
+    function v() {
+        var id =  document.getElementById("Id").value;
+        var lineId = document.getElementById("lineId").value;
+        var output = document.getElementById("output").value;
+        var passRate = document.getElementById("passRate").value;
+        var brkenDownTimeRate = document.getElementById("brkenDownTimeRate").value;
+        var performanceRate = document.getElementById("performanceRate").value;
+        var timeRate = document.getElementById("timeRate").value;
+        var oee = document.getElementById("oee").value;
+        var dateTimeRecord = document.getElementById("dateTimeRecord").value;
+
+
+        if (lineId > 4 ) {
+            alert("lineId格式错误");
+            return false;
+        }
+        return true;
+
+    }
+</script>
+<script>
+    //获取当前时间
+    function getNowFormatDate() {
+        var date = new Date();
+        var seperator1 = "-";
+        var seperator2 = ":";
+        var month = date.getMonth() + 1;
+        var strDate = date.getDate();
+        if (month >= 1 && month <= 9) {
+            month = "0" + month;
+        }
+        if (strDate >= 0 && strDate <= 9) {
+            strDate = "0" + strDate;
+        }
+        var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate
+                + " " + date.getHours() + seperator2 + date.getMinutes()
+                + seperator2 + date.getSeconds();
+        console.log(currentdate);
+        return currentdate;
+    }
+</script>
+
+<script>
+    //标准时间转标准格式
+    var formatDateTime = function (date) {
+        var y = date.getFullYear();
+        var m = date.getMonth() + 1;
+        m = m < 10 ? ('0' + m) : m;
+        var d = date.getDate();
+        d = d < 10 ? ('0' + d) : d;
+        var h = date.getHours();
+        var minute = date.getMinutes();
+        var second = date.getSeconds();
+        minute = minute < 10 ? ('0' + minute) : minute;
+        second = second < 10 ? ('0' + second) : second;
+        return y + '-' + m + '-' + d + ' ' + h + ':' + minute + ':' + second;
+    };
+</script>
+</html>

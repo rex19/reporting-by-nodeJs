@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ShiftInputHistory</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html;charset=gb2312">
+    <!-- Bootstrap -->
+    <link href="stylesheets/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="stylesheets/css/thin-admin.css" rel="stylesheet" media="screen">
+    <link href="stylesheets/css/font-awesome.css" rel="stylesheet" media="screen">
+    <link href="stylesheets/style/style.css" rel="stylesheet">
+    <link href="stylesheets/style/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style/jquery.jqplot.min.css"/>
+    <link href="stylesheets/css/demo_table.css" rel="stylesheet">
+
+    <!--<link href="stylesheets/css/bootstrap.min.css" rel="stylesheet" media="screen">-->
+    <link href="stylesheets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <script src="/js/jquery.min.js" charset="utf-8"></script>
+    <![endif]-->
+    <script type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+
+    <style>
+        .tcdPageCode {
+            padding: 15px 20px;
+            text-align: left;
+            color: #ccc;
+            text-align: center;
+        }
+
+        .tcdPageCode a {
+            display: inline-block;
+            color: white;
+            display: inline-block;
+            height: 25px;
+            line-height: 25px;
+            padding: 0 10px;
+            border: 1px solid #ddd;
+            margin: 0 2px;
+            border-radius: 4px;
+            vertical-align: middle;
+        }
+
+        .tcdPageCode a:hover {
+            text-decoration: none;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .tcdPageCode span.current {
+            display: inline-block;
+            height: 25px;
+            line-height: 25px;
+            padding: 0 10px;
+            margin: 0 2px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid rgba(0, 0, 0, 0);
+            border-radius: 4px;
+            vertical-align: middle;
+        }
+
+        .tcdPageCode span.disabled {
+            display: inline-block;
+            height: 25px;
+            line-height: 25px;
+            padding: 0 10px;
+            margin: 0 2px;
+            color: #bfbfbf;
+            background: #f2f2f2;
+            border: 1px solid #bfbfbf;
+            border-radius: 4px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="top-navbar header b-b"><a data-original-title="Toggle navigation" class="toggle-side-nav pull-left"
+                                          href="#"><i class="icon-reorder"></i> </a>
+        <!--<div class="brand pull-left"> <a href="#"style="font-size:2rem "><img src="images/CST.png" width="30" height="25"> 庆兰实业</a></div>-->
+        <div class="brand pull-left"><a href="http://www.smart-flow.cn">SmartFlow</a></div>
+
+    </div>
+</div>
+<div class="wrapper">
+    <div class="left-nav">
+        <div id="side-nav">
+            <ul id="nav">
+                <li><a href="/mainInterface"> <i class="icon-time"></i> Andon </a></li>
+                <li><a href="/catalog"> <i class="icon-desktop"></i> 主目录 </a></li>
+
+                <li><a href="#"> <i class="icon-bar-chart"></i> 折线数据分析图 <i class="arrow icon-angle-left"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="/outputM/1/2"> <i class="icon-bar-chart"></i> 1线产量</a></li>
+                        <li><a href="/outputM/3/4"> <i class="icon-bar-chart"></i> 2线产量</a></li>
+                        <li><a href="/brokenDownTimeRate/1/2"> <i class="icon-bar-chart"></i> 1线故障率</a></li>
+                        <li><a href="/brokenDownTimeRate/3/4"> <i class="icon-bar-chart"></i> 2线故障率</a></li>
+                        <li><a href="/timeRate/1/2"> <i class="icon-bar-chart"></i> 1线时间稼动率</a></li>
+                        <li><a href="/timeRate/3/4"> <i class="icon-bar-chart"></i> 2线时间稼动率</a></li>
+                        <li><a href="/performanceRate/1/2"> <i class="icon-bar-chart"></i> 1线性能稼动率</a></li>
+                        <li><a href="/performanceRate/3/4"> <i class="icon-bar-chart"></i> 2线性能稼动率</a></li>
+                        <li><a href="/passRate/1/2"> <i class="icon-bar-chart"></i> 1线良品率</a></li>
+                        <li><a href="/passRate/3/4"> <i class="icon-bar-chart"></i> 2线良品率</a></li>
+                        <li><a href="/oeeM/1/2"> <i class="icon-bar-chart"></i> 1线OEE</a></li>
+                        <li><a href="/oeeM/3/4"> <i class="icon-bar-chart"></i> 2线OEE</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/productShiftInput"> <i class="icon-edit"></i> 当班输入 </a>
+
+                </li>
+
+                <li><a href="#"> <i class="icon-table"></i> 历史查询 <i class="arrow icon-angle-left"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="/history"><i class="icon-table"></i>日数据历史查询</a></li>
+                        <li><a href="/ShiftInputHistory"><i class="icon-table"></i>班数据历史查询</a></li>
+                    </ul>
+
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="page-title">班数据历史查询</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="widget">
+                        <div class="widget-header"><i class="icon-arrow-down"></i>
+                            <h3>班数据历史查询</h3>
+                        </div>
+                        <div class="widget-content">
+                            <ul class="nav nav-tabs" id="myTab">
+                                <!--<li class="active"><a data-toggle="tab" href="#home">output</a></li>-->
+                                <!--<li class=""><a data-toggle="tab" id="line1"  href="#home">查找</a></li>-->
+
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div id="home" class="tab-pane fade active in">
+                                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in pretium dui. Cras commodo, neque non mollis tempor, dolor tellus ornare ipsum, eu luctus orci magna quis nibh. Donec luctus augue ac sem lacinia, at volutpat augue commodo. Duis aliquet rhoncus magna eu porttitor. Nulla sit amet justo lectus. Donec non tincidunt tellus, mollis venenatis lorem. Mauris sed commodo libero. Mauris interdum mollis enim, quis posuere erat rutrum sit amet. Curabitur at fermentum diam, nec bibendum risus. Mauris condimentum nibh ut gravida ornare. Morbi ornare, elit vitae vestibulum vehicula, neque nunc elementum tortor, vel pulvinar felis enim a neque. Donec malesuada congue orci in ornare.</p>-->
+                                    <!--<div class="form-group">-->
+                                    <div class="col-lg-1" style="margin-left:0%;margin-top:0.4%">
+                                        <a style="font-size: 1.1rem; text-align:center;">开始时间</a></div>
+                                    <div class="col-lg-2">
+                                        <input type="text" class="Wdate" id="startTime" style="margin-bottom: 20px"
+                                               onfocus="WdatePicker({lang:'zh-cn'})" size="16"/>
+
+                                    </div>
+
+                                    <!--<div class="input-group date form_date col-md-3 " data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd" style="margin-bottom: 20px;">
+                                        <input class="form-control" id="startTime"  size="16" type="text" value="" readonly>
+                                        <span class="input-group-addon"><span class="icon-undo"></span></span>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>-->
+                                    <div class="col-lg-1" style="margin-left:3%;margin-top:0.4%">
+                                        <a style="font-size: 1.1rem;text-align:center;">结束时间</a></div>
+                                    <!--<div class="input-group date form_date col-md-3 " data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd" style="margin-bottom: 20px;">-->
+                                    <div class="col-lg-2">
+
+                                        <input type="text" class="Wdate" id="endTime" style="margin-bottom: 20px"
+                                               onfocus="WdatePicker({lang:'zh-cn'})" size="16"/>
+                                    </div>
+
+                                    <!--</div>-->
+
+
+
+                                    <!--<div class="col-md-2"></div>-->
+                                    <div class="col-lg-1" style="margin-left:3%;margin-top:0.4% ">
+                                        <a style="font-size: 1.2rem;">线体名</a></div>
+                                    <div class="col-md-1" style="margin-bottom:20px ">
+                                        <select style="width: 100px;" id="lineId" class="form-control required" name="dd1">
+                                            <option value="1" selected="selected">1(a)线</option>
+                                            <option value="2">1(b)线</option>
+                                            <option value="3">2(a)线</option>
+                                            <option value="4">2(b)线</option>
+                                        </select>
+                                    </div>
+
+                                    <a></a>
+                                    <!--<input type="hidden" id="dtp_input2" value="" /><br/>-->
+                                    <a class="btn btn-s-md btn-success btn-rounded" id="confirm" href="#"
+                                       style="margin-left: 10%">确认</a>
+
+                                </div>
+                                <div id="dropdown4" class="tab-pane fade">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in pretium dui.
+                                        Cras commodo, neque non mollis tempor, dolor tellus ornare ipsum, eu luctus orci
+                                        magna quis nibh. Donec luctus augue ac sem lacinia, at volutpat augue commodo.
+                                        Duis aliquet rhoncus magna eu porttitor. Nulla sit amet justo lectus. Donec non
+                                        tincidunt tellus, mollis venenatis lorem. Mauris sed commodo libero. Mauris
+                                        interdum mollis enim, quis posuere erat rutrum sit amet. Curabitur at fermentum
+                                        diam, nec bibendum risus. Mauris condimentum nibh ut gravida ornare. Morbi
+                                        ornare, elit vitae vestibulum vehicula, neque nunc elementum tortor, vel
+                                        pulvinar felis enim a neque. Donec malesuada congue orci in ornare.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="widget">
+                        <div class="widget-header"><i class="icon-table"></i>
+                            <h3>查询结果</h3>
+                        </div>
+                        <div class="widget-content">
+
+
+                            <div class="example_alt_pagination">
+                                <div class="pull-left" style="margin-bottom: 10px ;">
+                                    <button class="btn btn-default btn-sm" id="edit" style=" width:45%"> 编辑</button>
+
+                                    <button class="btn btn-default btn-sm" id="delete" style=" width:45%">删除</button>
+
+                                </div>
+                                <div id="container">
+                                    <div class="full_width big"></div>
+                                    <div id="demo">
+                                        <table cellpadding="0" cellspacing="0" border="0" class="table table-bordered"
+                                               id="example">
+                                            <thead>
+                                            <tr>
+                                                <td><input type="checkbox" class="checkbox1"></td>
+                                                <th>线体名</th>
+                                                <th class="hidden-xs">班名</th>
+                                                <th class="hidden-xs">生产时间</th>
+                                                <th>异常时间</th>
+                                                <th>CycleTime</th>
+                                                <th>工废</th>
+                                                <th>料废</th>
+                                                <th>不良品数</th>
+                                                <th>当班时间</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody id="tbody">
+                                            </tbody>
+                                            <tfoot>
+
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                    <div class="tcdPageCode"></div>
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom-nav footer"><img src="images/SFlogo.png" width="33" height="20"> 2016 &copy; MesReporting By SmartFlow Team.</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/smooth-sliding-menu.js"></script>
+<script class="include" type="text/javascript" src="javascript/jquery191.min.js"></script>
+<script class="include" type="text/javascript" src="javascript/jquery.jqplot.min.js"></script>
+
+<script type="text/javascript" language="javascript" src="js/jquery.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.dataTables.js"></script>
+<!--<script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+        $('#example').dataTable( {
+            "sPaginationType": "full_numbers"
+        } );
+    } );
+</script>-->
+
+
+<!--switcher html start-->
+
+<div class="demo_changer active" style="right: 0px;">
+    <div class="demo-icon"></div>
+    <div class="form_holder">
+
+
+        <div class="predefined_styles">
+            <a class="styleswitch" rel="a" href=""><img alt="" src="images/a.jpg"></a>
+            <a class="styleswitch" rel="b" href=""><img alt="" src="images/b.jpg"></a>
+            <a class="styleswitch" rel="c" href=""><img alt="" src="images/c.jpg"></a>
+            <a class="styleswitch" rel="d" href=""><img alt="" src="images/d.jpg"></a>
+            <a class="styleswitch" rel="e" href=""><img alt="" src="images/e.jpg"></a>
+            <a class="styleswitch" rel="f" href=""><img alt="" src="images/f.jpg"></a>
+            <a class="styleswitch" rel="g" href=""><img alt="" src="images/g.jpg"></a>
+            <a class="styleswitch" rel="h" href=""><img alt="" src="images/h.jpg"></a>
+            <a class="styleswitch" rel="i" href=""><img alt="" src="images/i.jpg"></a>
+            <a class="styleswitch" rel="j" href=""><img alt="" src="images/j.jpg"></a>
+        </div>
+
+    </div>
+</div>
+
+
+<!--switcher html end-->
+<script src="assets/switcher/switcher.js"></script>
+<script src="assets/switcher/moderziner.custom.js"></script>
+<link href="assets/switcher/switcher.css" rel="stylesheet">
+<link href="assets/switcher/switcher-defult.css" rel="stylesheet">
+<link rel="alternate stylesheet" type="text/css" href="assets/switcher/a.css" title="a" media="all"/>
+<link rel="alternate stylesheet" type="text/css" href="assets/switcher/b.css" title="b" media="all"/>
+<link rel="alternate stylesheet" type="text/css" href="assets/switcher/c.css" title="c" media="all"/>
+<link rel="alternate stylesheet" type="text/css" href="assets/switcher/d.css" title="d" media="all"/>
+<link rel="alternate stylesheet" type="text/css" href="assets/switcher/e.css" title="e" media="all"/>
+<link rel="alternate stylesheet" type="text/css" href="assets/switcher/f.css" title="f" media="all"/>
+<link rel="alternate stylesheet" type="text/css" href="assets/switcher/g.css" title="g" media="all"/>
+<link rel="alternate stylesheet" type="text/css" href="assets/switcher/h.css" title="h" media="all"/>
+<link rel="alternate stylesheet" type="text/css" href="assets/switcher/i.css" title="i" media="all"/>
+<link rel="alternate stylesheet" type="text/css" href="assets/switcher/j.css" title="j" media="all"/>
+<!-- Additional plugins go here -->
+<script class="include" type="text/javascript" src="ThinAdmin/javascript/jqplot.barRenderer.min.js"></script>
+<script class="include" type="text/javascript" src="ThinAdmin/javascript/jqplot.highlighter.min.js"></script>
+<!--<script class="include" type="text/javascript" src="ThinAdmin/javascript/jqplot.cursor.min.js"></script>-->
+<script class="include" type="text/javascript" src="ThinAdmin/javascript/jqplot.pointLabels.min.js"></script>
+<script class="include" type="text/javascript" src="ThinAdmin/javascript/bar-animated.js"></script>
+
+</body>
+<!--<script type="text/javascript" src="ThinAdmin/js/jquery-1.8.3.min.js" charset="UTF-8"></script>-->
+
+<script type="text/javascript">
+    $("#confirm").click(function () {
+        //console.log("message");
+
+        var startTime = $("#startTime").val();
+        var endTime = $("#endTime").val();
+        var lineId = $("#lineId").val();
+//        console.log(startTime);
+//        console.log(endTime);
+        if (endTime < startTime) {
+            alert("开始时间不能大于结束时间");
+        }
+        $.ajax({
+            url: "/shiftInputHistory/shiftInputHanderData",//后台目标地址
+            type: "get",//请求的方式
+            data: {
+                "startTime": startTime,
+                "endTime": endTime,
+                "lineId":lineId
+            },//需要发送到后台 的数据
+            success: function (result) {
+                //result = 后台返回的数据 、
+                if (result != 0) {
+
+                    page(result.count);
+
+                    //设置tbody清空
+                    $("#tbody").html("");
+                    var tr = "";
+                    for (var i = 0; i < result.data.length; i++) {
+                        tr += '<tr class="gradeX">' +
+                                '<td><input type="checkbox" value=' + result.data[i].id + ' class="checkbox1"></td>' +
+                                '<td>' + result.data[i].lineId + '</td>' +
+                                '<td>' + result.data[i].shiftId + '</td>' +
+                                '<td>' + result.data[i].productionTimeSpan + '</td>' +
+                                '<td>' + result.data[i].abnormalProductionTimeSpan + '</td>' +
+                                '<td>' + result.data[i].cycleTime + '</td>' +
+                                '<td>' + result.data[i].waste + '</td>' +
+                                '<td>' + result.data[i].scrap + '</td>' +
+                                '<td>' + result.data[i].ngQuantity + '</td>' +
+                                '<td>' + result.data[i].dateRecord + '</td>' +
+                                '</tr>';
+                        //console.log("result[i].id",result)
+                    }
+
+                    $("tbody").append(tr);
+
+                    //  console.log("tr",tr);
+
+
+                    //console.log("result", result);
+
+                    // 将数据渲染到表格
+                } else {
+                    $("#tbody").html("");
+
+
+                }
+
+            }
+        })
+
+    })
+
+    //分页
+    function page(pagenum) {
+
+        $(".tcdPageCode").createPage({
+            pageCount: pagenum,
+            current: 1,
+            backFn: function (p) {
+                //console.log("p",p);
+                init(p);
+            }
+        });
+    }
+
+
+    function init(p) {
+
+        var startTime = $("#startTime").val();
+        var endTime = $("#endTime").val();
+        var lineId = $("#lineId").val();
+//        console.log(startTime);
+//        console.log(endTime);
+        if (endTime < startTime) {
+            alert("开始时间不能大于结束时间");
+        }
+        $.ajax({
+            url: "/shiftInputHistory/shiftInputHanderData",//后台目标地址
+            type: "get",//请求的方式
+            data: {
+                "startTime": startTime,
+                "endTime": endTime,
+                "page": p,
+                "lineId":lineId
+
+            },//需要发送到后台 的数据
+            success: function (result) {
+                //result = 后台返回的数据 、
+                if (result != 0) {
+
+                    //设置tbody清空
+                    $("#tbody").html("");
+                    var tr = "";
+                    for (var i = 0; i < result.data.length; i++) {
+                        tr += '<tr class="gradeX">' +
+                                '<td><input type="checkbox" value=' + result.data[i].id + ' class="checkbox1"></td>' +
+                                '<td>' + result.data[i].lineId + '</td>' +
+                                '<td>' + result.data[i].shiftId + '</td>' +
+                                '<td>' + result.data[i].productionTimeSpan + '</td>' +
+                                '<td>' + result.data[i].abnormalProductionTimeSpan + '</td>' +
+                                '<td>' + result.data[i].cycleTime + '</td>' +
+                                '<td>' + result.data[i].waste + '</td>' +
+                                '<td>' + result.data[i].scrap + '</td>' +
+                                '<td>' + result.data[i].ngQuantity + '</td>' +
+                                '<td>' + result.data[i].dateRecord + '</td>' +
+                                '</tr>';
+                        //console.log("result[i].id",result)
+                    }
+
+                    $("tbody").append(tr);
+
+                    //  console.log("tr",tr);
+
+
+                    //console.log("result", result);
+
+                    // 将数据渲染到表格
+                } else {
+                    $("#tbody").html("");
+
+
+                }
+
+            }
+        })
+
+
+    }
+
+
+</script>
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+<script type="text/javascript">
+    $('.form_datetime').datetimepicker({
+        //language:  'fr',
+        weekStart: 1,
+        todayBtn: 1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
+    });
+    $('.form_date').datetimepicker({
+        language: 'fr',
+        weekStart: 1,
+        todayBtn: 1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+    $('.form_time').datetimepicker({
+        language: 'fr',
+        weekStart: 1,
+        todayBtn: 1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 1,
+        minView: 0,
+        maxView: 1,
+        forceParse: 0
+    });
+</script>
+<script>
+    $("#edit").click(function () {
+        //alert('ok');
+        var checkbox = $(".checkbox1");
+        // console.log(checkbox.length);
+        for (var i = 0; i < checkbox.length; i++) {
+            //console.log(checkbox[i].checked);
+            if (checkbox[i].checked == true) {
+//                console.log($(checkbox[i]).val());
+                var id = $(checkbox[i]).val();
+            }
+        }
+    })
+</script>
+<script src="/js/jquery.page.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+    $("#delete").click(function () {
+        var checkbox = $(".checkbox1");
+        for (var i = 0; i < checkbox.length; i++) {
+            if (checkbox[i].checked == true) {
+                var id = $(checkbox[i]).val();
+
+                $.ajax({
+                    url: '/shiftInputHistory/delete/' + id,
+                    type: 'get',
+                    success: function (result) {
+                        if (result == "ok") {
+                            //console.log("ok了");
+                            var startTime = $("#startTime").val();
+                            var endTime = $("#endTime").val();
+                            var lineId = $("#lineId").val();
+
+//        console.log(startTime);
+//        console.log(endTime);
+                            if (endTime < startTime) {
+                                alert("开始时间不能大于结束时间");
+                            }
+                            $.ajax({
+                                url: "/shiftInputHistory/shiftInputHanderData",//后台目标地址
+                                type: "get",//请求的方式
+                                data: {
+                                    "startTime": startTime,
+                                    "endTime": endTime,
+                                    "lineId":lineId
+
+                                },//需要发送到后台 的数据
+                                success: function (result) {
+                                    //result = 后台返回的数据 、
+                                    if (result != 0) {
+
+                                        page(result.count);
+
+                                        //设置tbody清空
+                                        $("#tbody").html("");
+                                        var tr = "";
+                                        for (var i = 0; i < result.data.length; i++) {
+                                            tr += '<tr class="gradeX">' +
+                                                    '<td><input type="checkbox" value=' + result.data[i].id + ' class="checkbox1"></td>' +
+                                                    '<td>' + result.data[i].lineId + '</td>' +
+                                                    '<td>' + result.data[i].shiftId + '</td>' +
+                                                    '<td>' + result.data[i].productionTimeSpan + '</td>' +
+                                                    '<td>' + result.data[i].abnormalProductionTimeSpan + '</td>' +
+                                                    '<td>' + result.data[i].cycleTime + '</td>' +
+                                                    '<td>' + result.data[i].waste + '</td>' +
+                                                    '<td>' + result.data[i].scrap + '</td>' +
+                                                    '<td>' + result.data[i].ngQuantity + '</td>' +
+                                                    '<td>' + result.data[i].dateRecord + '</td>' +
+                                                    '</tr>';
+                                            //console.log("result[i].id",result)
+                                        }
+
+                                        $("tbody").append(tr);
+
+                                        //  console.log("tr",tr);
+
+
+                                        //console.log("result", result);
+
+                                        // 将数据渲染到表格
+                                    } else {
+                                        $("#tbody").html("");
+
+
+                                    }
+
+                                }
+                            })
+
+
+                            //分页
+                            function page(pagenum) {
+
+                                $(".tcdPageCode").createPage({
+                                    pageCount: pagenum,
+                                    current: 1,
+                                    backFn: function (p) {
+                                        //console.log("p",p);
+                                        init(p);
+                                    }
+                                });
+                            }
+
+
+                            function init(p) {
+
+                                var startTime = $("#startTime").val();
+                                var endTime = $("#endTime").val();
+//        console.log(startTime);
+//        console.log(endTime);
+                                if (endTime < startTime) {
+                                    alert("开始时间不能大于结束时间");
+                                }
+                                $.ajax({
+                                    url: "/shiftInputHistory/shiftInputHanderData",//后台目标地址
+                                    type: "get",//请求的方式
+                                    data: {
+                                        "startTime": startTime,
+                                        "endTime": endTime,
+                                        "page": p
+
+                                    },//需要发送到后台 的数据
+                                    success: function (result) {
+                                        //result = 后台返回的数据 、
+                                        if (result != 0) {
+
+                                            //设置tbody清空
+                                            $("#tbody").html("");
+                                            var tr = "";
+                                            for (var i = 0; i < result.data.length; i++) {
+                                                tr += '<tr class="gradeX">' +
+                                                        '<td><input type="checkbox" value=' + result.data[i].id + ' class="checkbox1"></td>' +
+                                                        '<td>' + result.data[i].lineId + '</td>' +
+                                                        '<td>' + result.data[i].shiftId + '</td>' +
+                                                        '<td>' + result.data[i].productionTimeSpan + '</td>' +
+                                                        '<td>' + result.data[i].abnormalProductionTimeSpan + '</td>' +
+                                                        '<td>' + result.data[i].cycleTime + '</td>' +
+                                                        '<td>' + result.data[i].waste + '</td>' +
+                                                        '<td>' + result.data[i].scrap + '</td>' +
+                                                        '<td>' + result.data[i].ngQuantity + '</td>' +
+                                                        '<td>' + result.data[i].dateRecord + '</td>' +
+                                                        '</tr>';
+                                                //console.log("result[i].id",result)
+                                            }
+
+                                            $("tbody").append(tr);
+
+
+                                            // 将数据渲染到表格
+                                        } else {
+                                            $("#tbody").html("");
+
+
+                                        }
+
+                                    }
+                                })
+                            }
+
+                            alert('删除成功');
+                        } else {
+                            alert("删除失败")
+                        }
+
+                    }
+                })
+            }
+        }
+    });
+</script>
+</html>
+
+
+<script>
+    $("#edit").click(function () {
+        //alert('ok');
+        var checkbox = $(".checkbox1");
+        // console.log(checkbox.length);
+        for (var i = 0; i < checkbox.length; i++) {
+            //console.log(checkbox[i].checked);
+            if (checkbox[i].checked == true) {
+//                console.log($(checkbox[i]).val());
+                var id = $(checkbox[i]).val();
+
+                location.href = "/shiftInputHistory/editShiftInputHistory/" + id;
+                /*                 $.ajax({
+                 url: '/history/edit/' + id,
+                 type: 'get',
+                 success: function (result) {
+
+                 }
+                 })*/
+            }
+        }
+    })
+</script>

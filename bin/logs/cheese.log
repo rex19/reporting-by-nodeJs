@@ -1,0 +1,722 @@
+[2016-11-04 00:10:06.116] [ERROR] cheese - { SequelizeValidationError: notNull Violation: username cannot be null,
+notNull Violation: password cannot be null
+    at C:\Workspece\Learn_express04\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:691:18)
+    at Promise._fulfill (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:636:18)
+    at PromiseArray._resolve (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise_array.js:125:19)
+    at PromiseArray._promiseFulfilled (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise_array.js:143:14)
+    at Promise._settlePromise (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:572:26)
+    at Promise._settlePromise0 (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\async.js:138:16)
+    at Async._drainQueues (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\async.js:17:14)
+    at tryOnImmediate (timers.js:543:15)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: username cannot be null,\nnotNull Violation: password cannot be null',
+  errors: 
+   [ { message: 'username cannot be null',
+       type: 'notNull Violation',
+       path: 'username',
+       value: null },
+     { message: 'password cannot be null',
+       type: 'notNull Violation',
+       path: 'password',
+       value: null } ] }
+[2016-11-04 00:11:54.213] [ERROR] cheese - { SequelizeValidationError: notNull Violation: username cannot be null,
+notNull Violation: password cannot be null
+    at C:\Workspece\Learn_express04\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:691:18)
+    at Promise._fulfill (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:636:18)
+    at PromiseArray._resolve (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise_array.js:125:19)
+    at PromiseArray._promiseFulfilled (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise_array.js:143:14)
+    at Promise._settlePromise (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:572:26)
+    at Promise._settlePromise0 (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\async.js:138:16)
+    at Async._drainQueues (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\async.js:17:14)
+    at tryOnImmediate (timers.js:543:15)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: username cannot be null,\nnotNull Violation: password cannot be null',
+  errors: 
+   [ { message: 'username cannot be null',
+       type: 'notNull Violation',
+       path: 'username',
+       value: null },
+     { message: 'password cannot be null',
+       type: 'notNull Violation',
+       path: 'password',
+       value: null } ] }
+[2016-11-04 00:13:58.578] [ERROR] cheese - { SequelizeValidationError: notNull Violation: username cannot be null,
+notNull Violation: password cannot be null
+    at C:\Workspece\Learn_express04\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:691:18)
+    at Promise._fulfill (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:636:18)
+    at PromiseArray._resolve (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise_array.js:125:19)
+    at PromiseArray._promiseFulfilled (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise_array.js:143:14)
+    at Promise._settlePromise (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:572:26)
+    at Promise._settlePromise0 (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\async.js:138:16)
+    at Async._drainQueues (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\async.js:17:14)
+    at tryOnImmediate (timers.js:543:15)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: username cannot be null,\nnotNull Violation: password cannot be null',
+  errors: 
+   [ { message: 'username cannot be null',
+       type: 'notNull Violation',
+       path: 'username',
+       value: null },
+     { message: 'password cannot be null',
+       type: 'notNull Violation',
+       path: 'password',
+       value: null } ] }
+[2016-11-04 00:21:11.555] [ERROR] cheese - { SequelizeValidationError: notNull Violation: username cannot be null,
+notNull Violation: password cannot be null
+    at C:\Workspece\Learn_express04\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:691:18)
+    at Promise._fulfill (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:636:18)
+    at PromiseArray._resolve (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise_array.js:125:19)
+    at PromiseArray._promiseFulfilled (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise_array.js:143:14)
+    at Promise._settlePromise (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:572:26)
+    at Promise._settlePromise0 (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\async.js:138:16)
+    at Async._drainQueues (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\async.js:17:14)
+    at tryOnImmediate (timers.js:543:15)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: username cannot be null,\nnotNull Violation: password cannot be null',
+  errors: 
+   [ { message: 'username cannot be null',
+       type: 'notNull Violation',
+       path: 'username',
+       value: null },
+     { message: 'password cannot be null',
+       type: 'notNull Violation',
+       path: 'password',
+       value: null } ] }
+[2016-11-07 00:16:38.813] [ERROR] cheese - { SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',,,'','0','2016-11-06 16:16:38','2016-11-06 16:16:38')' at line 1
+    at Query.formatError (C:\Workspece\Learn_express04\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (C:\Workspece\Learn_express04\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (C:\Workspece\Learn_express04\node_modules\mysql\lib\protocol\sequences\Sequence.js:85:24)
+    at Query.ErrorPacket (C:\Workspece\Learn_express04\node_modules\mysql\lib\protocol\sequences\Query.js:94:8)
+    at Protocol._parsePacket (C:\Workspece\Learn_express04\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (C:\Workspece\Learn_express04\node_modules\mysql\lib\protocol\Parser.js:74:12)
+    at Protocol.write (C:\Workspece\Learn_express04\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (C:\Workspece\Learn_express04\node_modules\mysql\lib\Connection.js:109:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \',,,\'\',\'0\',\'2016-11-06 16:16:38\',\'2016-11-06 16:16:38\')\' at line 1',
+  parent: 
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',,,'','0','2016-11-06 16:16:38','2016-11-06 16:16:38')' at line 1
+       at Query.Sequence._packetToError (C:\Workspece\Learn_express04\node_modules\mysql\lib\protocol\sequences\Sequence.js:51:14)
+       at Query.ErrorPacket (C:\Workspece\Learn_express04\node_modules\mysql\lib\protocol\sequences\Query.js:83:18)
+       at Protocol._parsePacket (C:\Workspece\Learn_express04\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+       at Parser.write (C:\Workspece\Learn_express04\node_modules\mysql\lib\protocol\Parser.js:74:12)
+       at Protocol.write (C:\Workspece\Learn_express04\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+       at Socket.<anonymous> (C:\Workspece\Learn_express04\node_modules\mysql\lib\Connection.js:109:28)
+       at emitOne (events.js:96:13)
+       at Socket.emit (events.js:188:7)
+       at readableAddChunk (_stream_readable.js:172:18)
+       at Socket.Readable.push (_stream_readable.js:130:10)
+       at TCP.onread (net.js:542:20)
+       --------------------
+       at Protocol._enqueue (C:\Workspece\Learn_express04\node_modules\mysql\lib\protocol\Protocol.js:141:48)
+       at Connection.query (C:\Workspece\Learn_express04\node_modules\mysql\lib\Connection.js:214:25)
+       at C:\Workspece\Learn_express04\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+       at Promise._execute (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\debuggability.js:299:9)
+       at Promise._resolveFromExecutor (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:481:18)
+       at new Promise (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:77:14)
+       at Query.run (C:\Workspece\Learn_express04\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+       at C:\Workspece\Learn_express04\node_modules\sequelize\lib\sequelize.js:849:20
+       at C:\Workspece\Learn_express04\node_modules\retry-as-promised\index.js:38:21
+       at Promise._execute (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\debuggability.js:299:9)
+       at Promise._resolveFromExecutor (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:481:18)
+       at new Promise (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:77:14)
+       at retryAsPromised (C:\Workspece\Learn_express04\node_modules\retry-as-promised\index.js:27:10)
+       at C:\Workspece\Learn_express04\node_modules\sequelize\lib\sequelize.js:848:12
+       at tryCatcher (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:510:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlState: '42000',
+     index: 0,
+     sql: 'INSERT INTO `ProductShiftInputs` (`id`,`lineId`,`shiftId`,`productionTimeSpan`,`abnormalProductionTimeSpan`,`cycleTime`,`ngQuantity`,`dateRecord`,`isProcessed`,`createdAt`,`updatedAt`) VALUES (DEFAULT,\'1\',\'1\',,,,,\'\',\'0\',\'2016-11-06 16:16:38\',\'2016-11-06 16:16:38\');' },
+  original: 
+   { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',,,'','0','2016-11-06 16:16:38','2016-11-06 16:16:38')' at line 1
+       at Query.Sequence._packetToError (C:\Workspece\Learn_express04\node_modules\mysql\lib\protocol\sequences\Sequence.js:51:14)
+       at Query.ErrorPacket (C:\Workspece\Learn_express04\node_modules\mysql\lib\protocol\sequences\Query.js:83:18)
+       at Protocol._parsePacket (C:\Workspece\Learn_express04\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+       at Parser.write (C:\Workspece\Learn_express04\node_modules\mysql\lib\protocol\Parser.js:74:12)
+       at Protocol.write (C:\Workspece\Learn_express04\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+       at Socket.<anonymous> (C:\Workspece\Learn_express04\node_modules\mysql\lib\Connection.js:109:28)
+       at emitOne (events.js:96:13)
+       at Socket.emit (events.js:188:7)
+       at readableAddChunk (_stream_readable.js:172:18)
+       at Socket.Readable.push (_stream_readable.js:130:10)
+       at TCP.onread (net.js:542:20)
+       --------------------
+       at Protocol._enqueue (C:\Workspece\Learn_express04\node_modules\mysql\lib\protocol\Protocol.js:141:48)
+       at Connection.query (C:\Workspece\Learn_express04\node_modules\mysql\lib\Connection.js:214:25)
+       at C:\Workspece\Learn_express04\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+       at Promise._execute (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\debuggability.js:299:9)
+       at Promise._resolveFromExecutor (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:481:18)
+       at new Promise (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:77:14)
+       at Query.run (C:\Workspece\Learn_express04\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+       at C:\Workspece\Learn_express04\node_modules\sequelize\lib\sequelize.js:849:20
+       at C:\Workspece\Learn_express04\node_modules\retry-as-promised\index.js:38:21
+       at Promise._execute (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\debuggability.js:299:9)
+       at Promise._resolveFromExecutor (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:481:18)
+       at new Promise (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:77:14)
+       at retryAsPromised (C:\Workspece\Learn_express04\node_modules\retry-as-promised\index.js:27:10)
+       at C:\Workspece\Learn_express04\node_modules\sequelize\lib\sequelize.js:848:12
+       at tryCatcher (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Workspece\Learn_express04\node_modules\bluebird\js\release\promise.js:510:31)
+     code: 'ER_PARSE_ERROR',
+     errno: 1064,
+     sqlState: '42000',
+     index: 0,
+     sql: 'INSERT INTO `ProductShiftInputs` (`id`,`lineId`,`shiftId`,`productionTimeSpan`,`abnormalProductionTimeSpan`,`cycleTime`,`ngQuantity`,`dateRecord`,`isProcessed`,`createdAt`,`updatedAt`) VALUES (DEFAULT,\'1\',\'1\',,,,,\'\',\'0\',\'2016-11-06 16:16:38\',\'2016-11-06 16:16:38\');' },
+  sql: 'INSERT INTO `ProductShiftInputs` (`id`,`lineId`,`shiftId`,`productionTimeSpan`,`abnormalProductionTimeSpan`,`cycleTime`,`ngQuantity`,`dateRecord`,`isProcessed`,`createdAt`,`updatedAt`) VALUES (DEFAULT,\'1\',\'1\',,,,,\'\',\'0\',\'2016-11-06 16:16:38\',\'2016-11-06 16:16:38\');' }
+[2016-11-10 16:23:44.730] [ERROR] cheese - { SequelizeValidationError: notNull Violation: dateRecord cannot be null
+    at C:\Workspece\Waxberry\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (C:\Workspece\Waxberry\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Promise._fulfill (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:636:18)
+    at PromiseArray._resolve (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:125:19)
+    at PromiseArray._promiseFulfilled (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:143:14)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:572:26)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:138:16)
+    at Async._drainQueues (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:17:14)
+    at tryOnImmediate (timers.js:543:15)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: dateRecord cannot be null',
+  errors: 
+   [ { message: 'dateRecord cannot be null',
+       type: 'notNull Violation',
+       path: 'dateRecord',
+       value: null } ] }
+[2016-11-10 18:19:51.891] [ERROR] cheese - { SequelizeValidationError: notNull Violation: dateRecord cannot be null
+    at C:\Workspece\Waxberry\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (C:\Workspece\Waxberry\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Promise._fulfill (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:636:18)
+    at PromiseArray._resolve (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:125:19)
+    at PromiseArray._promiseFulfilled (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:143:14)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:572:26)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:138:16)
+    at Async._drainQueues (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:17:14)
+    at tryOnImmediate (timers.js:543:15)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: dateRecord cannot be null',
+  errors: 
+   [ { message: 'dateRecord cannot be null',
+       type: 'notNull Violation',
+       path: 'dateRecord',
+       value: null } ] }
+[2016-11-16 16:44:03.322] [ERROR] cheese - { SequelizeValidationError: notNull Violation: dateRecord cannot be null
+    at C:\Workspece\Waxberry\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (C:\Workspece\Waxberry\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Promise._fulfill (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:636:18)
+    at PromiseArray._resolve (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:125:19)
+    at PromiseArray._promiseFulfilled (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:143:14)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:572:26)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:138:16)
+    at Async._drainQueues (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:17:14)
+    at tryOnImmediate (timers.js:543:15)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: dateRecord cannot be null',
+  errors: 
+   [ { message: 'dateRecord cannot be null',
+       type: 'notNull Violation',
+       path: 'dateRecord',
+       value: null } ] }
+[2016-11-16 17:10:24.738] [ERROR] cheese - { SequelizeValidationError: notNull Violation: dateRecord cannot be null
+    at C:\Workspece\Waxberry\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (C:\Workspece\Waxberry\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Promise._fulfill (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:636:18)
+    at PromiseArray._resolve (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:125:19)
+    at PromiseArray._promiseFulfilled (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:143:14)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:572:26)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:138:16)
+    at Async._drainQueues (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:17:14)
+    at tryOnImmediate (timers.js:543:15)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: dateRecord cannot be null',
+  errors: 
+   [ { message: 'dateRecord cannot be null',
+       type: 'notNull Violation',
+       path: 'dateRecord',
+       value: null } ] }
+[2016-11-16 17:10:46.535] [ERROR] cheese - { SequelizeValidationError: notNull Violation: dateRecord cannot be null
+    at C:\Workspece\Waxberry\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (C:\Workspece\Waxberry\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Promise._fulfill (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:636:18)
+    at PromiseArray._resolve (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:125:19)
+    at PromiseArray._promiseFulfilled (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:143:14)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:572:26)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:138:16)
+    at Async._drainQueues (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:17:14)
+    at tryOnImmediate (timers.js:543:15)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: dateRecord cannot be null',
+  errors: 
+   [ { message: 'dateRecord cannot be null',
+       type: 'notNull Violation',
+       path: 'dateRecord',
+       value: null } ] }
+[2016-11-16 17:11:19.118] [ERROR] cheese - { SequelizeValidationError: notNull Violation: dateRecord cannot be null
+    at C:\Workspece\Waxberry\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (C:\Workspece\Waxberry\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Promise._fulfill (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:636:18)
+    at PromiseArray._resolve (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:125:19)
+    at PromiseArray._promiseFulfilled (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:143:14)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:572:26)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:138:16)
+    at Async._drainQueues (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:17:14)
+    at tryOnImmediate (timers.js:543:15)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: dateRecord cannot be null',
+  errors: 
+   [ { message: 'dateRecord cannot be null',
+       type: 'notNull Violation',
+       path: 'dateRecord',
+       value: null } ] }
+[2016-11-16 17:26:16.434] [ERROR] cheese - { SequelizeValidationError: notNull Violation: dateRecord cannot be null
+    at C:\Workspece\Waxberry\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (C:\Workspece\Waxberry\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Promise._fulfill (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:636:18)
+    at PromiseArray._resolve (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:125:19)
+    at PromiseArray._promiseFulfilled (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:143:14)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:572:26)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:138:16)
+    at Async._drainQueues (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:17:14)
+    at tryOnImmediate (timers.js:543:15)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: dateRecord cannot be null',
+  errors: 
+   [ { message: 'dateRecord cannot be null',
+       type: 'notNull Violation',
+       path: 'dateRecord',
+       value: null } ] }
+[2016-11-16 17:26:46.974] [ERROR] cheese - { SequelizeValidationError: notNull Violation: dateRecord cannot be null
+    at C:\Workspece\Waxberry\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (C:\Workspece\Waxberry\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Promise._fulfill (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:636:18)
+    at PromiseArray._resolve (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:125:19)
+    at PromiseArray._promiseFulfilled (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:143:14)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:572:26)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:138:16)
+    at Async._drainQueues (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:17:14)
+    at tryOnImmediate (timers.js:543:15)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: dateRecord cannot be null',
+  errors: 
+   [ { message: 'dateRecord cannot be null',
+       type: 'notNull Violation',
+       path: 'dateRecord',
+       value: null } ] }
+[2016-11-16 18:52:52.551] [ERROR] cheese - { SequelizeValidationError: notNull Violation: dateRecord cannot be null
+    at C:\Workspece\Waxberry\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (C:\Workspece\Waxberry\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Promise._fulfill (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:636:18)
+    at PromiseArray._resolve (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:125:19)
+    at PromiseArray._promiseFulfilled (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:143:14)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:572:26)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:138:16)
+    at Async._drainQueues (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:17:14)
+    at tryOnImmediate (timers.js:543:15)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: dateRecord cannot be null',
+  errors: 
+   [ { message: 'dateRecord cannot be null',
+       type: 'notNull Violation',
+       path: 'dateRecord',
+       value: null } ] }
+[2016-11-16 20:54:56.934] [ERROR] cheese - { SequelizeValidationError: notNull Violation: dateRecord cannot be null
+    at C:\Workspece\Waxberry\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (C:\Workspece\Waxberry\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Promise._fulfill (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:636:18)
+    at PromiseArray._resolve (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:125:19)
+    at PromiseArray._promiseFulfilled (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:143:14)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:572:26)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:138:16)
+    at Async._drainQueues (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:17:14)
+    at tryOnImmediate (timers.js:543:15)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: dateRecord cannot be null',
+  errors: 
+   [ { message: 'dateRecord cannot be null',
+       type: 'notNull Violation',
+       path: 'dateRecord',
+       value: null } ] }
+[2016-11-16 22:22:00.856] [ERROR] cheese - { SequelizeValidationError: notNull Violation: dateRecord cannot be null
+    at C:\Workspece\Waxberry\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (C:\Workspece\Waxberry\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Promise._fulfill (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:636:18)
+    at PromiseArray._resolve (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:125:19)
+    at PromiseArray._promiseFulfilled (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:143:14)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:572:26)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:138:16)
+    at Async._drainQueues (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:17:14)
+    at tryOnImmediate (timers.js:543:15)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: dateRecord cannot be null',
+  errors: 
+   [ { message: 'dateRecord cannot be null',
+       type: 'notNull Violation',
+       path: 'dateRecord',
+       value: null } ] }
+[2016-11-16 22:22:37.889] [ERROR] cheese - { SequelizeValidationError: notNull Violation: dateRecord cannot be null
+    at C:\Workspece\Waxberry\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (C:\Workspece\Waxberry\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Promise._fulfill (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:636:18)
+    at PromiseArray._resolve (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:125:19)
+    at PromiseArray._promiseFulfilled (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:143:14)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:572:26)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:138:16)
+    at Async._drainQueues (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:17:14)
+    at tryOnImmediate (timers.js:543:15)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: dateRecord cannot be null',
+  errors: 
+   [ { message: 'dateRecord cannot be null',
+       type: 'notNull Violation',
+       path: 'dateRecord',
+       value: null } ] }
+[2016-11-16 22:24:35.778] [ERROR] cheese - { SequelizeValidationError: notNull Violation: dateRecord cannot be null
+    at C:\Workspece\Waxberry\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (C:\Workspece\Waxberry\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Promise._fulfill (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:636:18)
+    at PromiseArray._resolve (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:125:19)
+    at PromiseArray._promiseFulfilled (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:143:14)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:572:26)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:138:16)
+    at Async._drainQueues (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:17:14)
+    at tryOnImmediate (timers.js:543:15)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: dateRecord cannot be null',
+  errors: 
+   [ { message: 'dateRecord cannot be null',
+       type: 'notNull Violation',
+       path: 'dateRecord',
+       value: null } ] }
+[2016-11-16 22:40:16.731] [ERROR] cheese - { SequelizeValidationError: notNull Violation: dateRecord cannot be null
+    at C:\Workspece\Waxberry\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (C:\Workspece\Waxberry\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Promise._fulfill (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:636:18)
+    at PromiseArray._resolve (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:125:19)
+    at PromiseArray._promiseFulfilled (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:143:14)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:572:26)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:138:16)
+    at Async._drainQueues (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:17:14)
+    at tryOnImmediate (timers.js:543:15)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: dateRecord cannot be null',
+  errors: 
+   [ { message: 'dateRecord cannot be null',
+       type: 'notNull Violation',
+       path: 'dateRecord',
+       value: null } ] }
+[2016-11-17 15:44:06.825] [ERROR] cheese - { SequelizeValidationError: notNull Violation: dateRecord cannot be null
+    at C:\Workspece\Waxberry\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (C:\Workspece\Waxberry\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Promise._fulfill (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:636:18)
+    at PromiseArray._resolve (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:125:19)
+    at PromiseArray._promiseFulfilled (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:143:14)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:572:26)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:138:16)
+    at Async._drainQueues (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:17:14)
+    at tryOnImmediate (timers.js:543:15)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: dateRecord cannot be null',
+  errors: 
+   [ { message: 'dateRecord cannot be null',
+       type: 'notNull Violation',
+       path: 'dateRecord',
+       value: null } ] }
+[2016-11-17 15:45:49.840] [ERROR] cheese - { SequelizeValidationError: notNull Violation: dateRecord cannot be null
+    at C:\Workspece\Waxberry\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (C:\Workspece\Waxberry\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Promise._fulfill (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:636:18)
+    at PromiseArray._resolve (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:125:19)
+    at PromiseArray._promiseFulfilled (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:143:14)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:572:26)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:138:16)
+    at Async._drainQueues (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:17:14)
+    at tryOnImmediate (timers.js:543:15)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: dateRecord cannot be null',
+  errors: 
+   [ { message: 'dateRecord cannot be null',
+       type: 'notNull Violation',
+       path: 'dateRecord',
+       value: null } ] }
+[2016-11-17 15:46:07.353] [ERROR] cheese - { SequelizeValidationError: notNull Violation: dateRecord cannot be null
+    at C:\Workspece\Waxberry\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (C:\Workspece\Waxberry\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Promise._fulfill (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:636:18)
+    at PromiseArray._resolve (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:125:19)
+    at PromiseArray._promiseFulfilled (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:143:14)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:572:26)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:138:16)
+    at Async._drainQueues (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:17:14)
+    at tryOnImmediate (timers.js:543:15)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: dateRecord cannot be null',
+  errors: 
+   [ { message: 'dateRecord cannot be null',
+       type: 'notNull Violation',
+       path: 'dateRecord',
+       value: null } ] }
+[2016-11-17 15:47:34.405] [ERROR] cheese - { SequelizeValidationError: notNull Violation: dateRecord cannot be null
+    at C:\Workspece\Waxberry\node_modules\sequelize\lib\instance-validator.js:74:14
+    at tryCatcher (C:\Workspece\Waxberry\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Promise._fulfill (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:636:18)
+    at PromiseArray._resolve (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:125:19)
+    at PromiseArray._promiseFulfilled (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise_array.js:143:14)
+    at Promise._settlePromise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:572:26)
+    at Promise._settlePromise0 (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:138:16)
+    at Async._drainQueues (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Workspece\Waxberry\node_modules\bluebird\js\release\async.js:17:14)
+    at tryOnImmediate (timers.js:543:15)
+  name: 'SequelizeValidationError',
+  message: 'notNull Violation: dateRecord cannot be null',
+  errors: 
+   [ { message: 'dateRecord cannot be null',
+       type: 'notNull Violation',
+       path: 'dateRecord',
+       value: null } ] }
+[2016-11-17 19:51:50.871] [ERROR] cheese - { SequelizeDatabaseError: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.formatError (C:\Workspece\Waxberry\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (C:\Workspece\Waxberry\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (C:\Workspece\Waxberry\node_modules\mysql\lib\protocol\sequences\Sequence.js:85:24)
+    at Query.ErrorPacket (C:\Workspece\Waxberry\node_modules\mysql\lib\protocol\sequences\Query.js:94:8)
+    at Protocol._parsePacket (C:\Workspece\Waxberry\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (C:\Workspece\Waxberry\node_modules\mysql\lib\protocol\Parser.js:74:12)
+    at Protocol.write (C:\Workspece\Waxberry\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (C:\Workspece\Waxberry\node_modules\mysql\lib\Connection.js:109:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:172:18)
+    at Socket.Readable.push (_stream_readable.js:130:10)
+    at TCP.onread (net.js:542:20)
+  name: 'SequelizeDatabaseError',
+  message: 'ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn\'t match value count at row 1',
+  parent: 
+   { Error: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+       at Query.Sequence._packetToError (C:\Workspece\Waxberry\node_modules\mysql\lib\protocol\sequences\Sequence.js:51:14)
+       at Query.ErrorPacket (C:\Workspece\Waxberry\node_modules\mysql\lib\protocol\sequences\Query.js:83:18)
+       at Protocol._parsePacket (C:\Workspece\Waxberry\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+       at Parser.write (C:\Workspece\Waxberry\node_modules\mysql\lib\protocol\Parser.js:74:12)
+       at Protocol.write (C:\Workspece\Waxberry\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+       at Socket.<anonymous> (C:\Workspece\Waxberry\node_modules\mysql\lib\Connection.js:109:28)
+       at emitOne (events.js:96:13)
+       at Socket.emit (events.js:188:7)
+       at readableAddChunk (_stream_readable.js:172:18)
+       at Socket.Readable.push (_stream_readable.js:130:10)
+       at TCP.onread (net.js:542:20)
+       --------------------
+       at Protocol._enqueue (C:\Workspece\Waxberry\node_modules\mysql\lib\protocol\Protocol.js:141:48)
+       at Connection.query (C:\Workspece\Waxberry\node_modules\mysql\lib\Connection.js:214:25)
+       at C:\Workspece\Waxberry\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+       at Promise._execute (C:\Workspece\Waxberry\node_modules\bluebird\js\release\debuggability.js:299:9)
+       at Promise._resolveFromExecutor (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:481:18)
+       at new Promise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:77:14)
+       at Query.run (C:\Workspece\Waxberry\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+       at C:\Workspece\Waxberry\node_modules\sequelize\lib\sequelize.js:849:20
+       at C:\Workspece\Waxberry\node_modules\retry-as-promised\index.js:38:21
+       at Promise._execute (C:\Workspece\Waxberry\node_modules\bluebird\js\release\debuggability.js:299:9)
+       at Promise._resolveFromExecutor (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:481:18)
+       at new Promise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:77:14)
+       at retryAsPromised (C:\Workspece\Waxberry\node_modules\retry-as-promised\index.js:27:10)
+       at C:\Workspece\Waxberry\node_modules\sequelize\lib\sequelize.js:848:12
+       at tryCatcher (C:\Workspece\Waxberry\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:510:31)
+     code: 'ER_WRONG_VALUE_COUNT_ON_ROW',
+     errno: 1136,
+     sqlState: '21S01',
+     index: 0,
+     sql: 'INSERT INTO `ProductShiftInputs` (`id`,`lineId`,`shiftId`,`productionTimeSpan`,`abnormalProductionTimeSpan`,`cycleTime`,`ngQuantity`,`dateRecord`,`isProcessed`,`createdAt`,`updatedAt`) VALUES (DEFAULT,\'1\',\'3\',\'3\',420,10,75,1,\'2016-11-15 16:00:00\',\'0\',\'2016-11-17 11:51:50\',\'2016-11-17 11:51:50\');' },
+  original: 
+   { Error: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+       at Query.Sequence._packetToError (C:\Workspece\Waxberry\node_modules\mysql\lib\protocol\sequences\Sequence.js:51:14)
+       at Query.ErrorPacket (C:\Workspece\Waxberry\node_modules\mysql\lib\protocol\sequences\Query.js:83:18)
+       at Protocol._parsePacket (C:\Workspece\Waxberry\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+       at Parser.write (C:\Workspece\Waxberry\node_modules\mysql\lib\protocol\Parser.js:74:12)
+       at Protocol.write (C:\Workspece\Waxberry\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+       at Socket.<anonymous> (C:\Workspece\Waxberry\node_modules\mysql\lib\Connection.js:109:28)
+       at emitOne (events.js:96:13)
+       at Socket.emit (events.js:188:7)
+       at readableAddChunk (_stream_readable.js:172:18)
+       at Socket.Readable.push (_stream_readable.js:130:10)
+       at TCP.onread (net.js:542:20)
+       --------------------
+       at Protocol._enqueue (C:\Workspece\Waxberry\node_modules\mysql\lib\protocol\Protocol.js:141:48)
+       at Connection.query (C:\Workspece\Waxberry\node_modules\mysql\lib\Connection.js:214:25)
+       at C:\Workspece\Waxberry\node_modules\sequelize\lib\dialects\mysql\query.js:40:21
+       at Promise._execute (C:\Workspece\Waxberry\node_modules\bluebird\js\release\debuggability.js:299:9)
+       at Promise._resolveFromExecutor (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:481:18)
+       at new Promise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:77:14)
+       at Query.run (C:\Workspece\Waxberry\node_modules\sequelize\lib\dialects\mysql\query.js:39:17)
+       at C:\Workspece\Waxberry\node_modules\sequelize\lib\sequelize.js:849:20
+       at C:\Workspece\Waxberry\node_modules\retry-as-promised\index.js:38:21
+       at Promise._execute (C:\Workspece\Waxberry\node_modules\bluebird\js\release\debuggability.js:299:9)
+       at Promise._resolveFromExecutor (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:481:18)
+       at new Promise (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:77:14)
+       at retryAsPromised (C:\Workspece\Waxberry\node_modules\retry-as-promised\index.js:27:10)
+       at C:\Workspece\Waxberry\node_modules\sequelize\lib\sequelize.js:848:12
+       at tryCatcher (C:\Workspece\Waxberry\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Workspece\Waxberry\node_modules\bluebird\js\release\promise.js:510:31)
+     code: 'ER_WRONG_VALUE_COUNT_ON_ROW',
+     errno: 1136,
+     sqlState: '21S01',
+     index: 0,
+     sql: 'INSERT INTO `ProductShiftInputs` (`id`,`lineId`,`shiftId`,`productionTimeSpan`,`abnormalProductionTimeSpan`,`cycleTime`,`ngQuantity`,`dateRecord`,`isProcessed`,`createdAt`,`updatedAt`) VALUES (DEFAULT,\'1\',\'3\',\'3\',420,10,75,1,\'2016-11-15 16:00:00\',\'0\',\'2016-11-17 11:51:50\',\'2016-11-17 11:51:50\');' },
+  sql: 'INSERT INTO `ProductShiftInputs` (`id`,`lineId`,`shiftId`,`productionTimeSpan`,`abnormalProductionTimeSpan`,`cycleTime`,`ngQuantity`,`dateRecord`,`isProcessed`,`createdAt`,`updatedAt`) VALUES (DEFAULT,\'1\',\'3\',\'3\',420,10,75,1,\'2016-11-15 16:00:00\',\'0\',\'2016-11-17 11:51:50\',\'2016-11-17 11:51:50\');' }

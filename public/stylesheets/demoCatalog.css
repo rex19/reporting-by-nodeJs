@@ -1,0 +1,312 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+    margin:0 auto ;
+    padding:0;
+
+}
+body{
+    font-size: 12px;
+    font-family:Arial,Verdana;
+    /*background-color: black;*/
+
+}
+
+.quanbu{
+    height:720px;
+    width:auto;
+    //background-color:#666;
+    /*background:url(../image/background21.jpg);*/
+
+}
+.left{
+    width:25%;
+    height:90%;
+    float:left;
+
+}
+.left_top{
+    width:100%;
+    height:50%;
+
+
+}
+
+.left_top_ul{
+
+    margin-left:15%;
+    height:60%;
+    width:70%;
+    position:relative;
+
+    margin-top:50px;
+
+
+}
+.left_top_ul ul li{
+    margin-top:0px;
+    margin-left:0px;
+    list-style:none;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    color:#000;
+}
+.left_top_ul ul li a{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.left_top_ul ul li a:hover{
+    text-decoration:underline;
+    color:#E47911;
+
+}
+.left_bottom{
+    width:100%;
+    height:50%;
+
+
+
+}
+
+.center{
+    width:50%;
+    height:100%;
+    float:left;
+
+
+}
+.center_top{
+    width:100%;
+    height:15%;
+
+}
+.center_top_left{
+    width:49%;
+    height:100%;
+
+    margin-left:0%;
+}
+.center_top_right{
+    width:51%;
+    height:100%;
+
+    margin-left:50%;
+    float:right;
+}
+.center_center{
+    width:100%;
+    height:70%;
+
+}
+.center_center_surplus{
+    width:4%;
+    height:100%;
+    margin-left:99%;
+
+}
+.center_bottom
+{
+    width:100%;
+    height:15%;
+
+}
+.center_bottom_left{
+    width:49%;
+    height:100%;
+
+    margin-left:0%;
+}
+.center_bottom_right{
+    width:51%;
+    height:100%;
+
+    margin-left:50%;
+    float:right;
+
+}
+.right{
+    width:25%;
+    float:left;
+    height:90%;
+
+
+}
+.right_top{
+    width:90%;
+    height:50%;
+
+
+}
+.right_bottom{
+    width:100%;
+    height:50%;
+
+
+}
+
+.lathe11{
+    margin-top:5%;
+    width:85%;
+    height:25%;
+    margin-left:5%;
+    /*background-color:#434343;*/
+    #float:left;
+}
+
+.lathe14
+{
+    width:85%;
+    height:25%;
+    margin-left:5%;
+    #margin-top:5%;
+    #margin-left:40%;
+    #float:right;
+    /*background-color:#434343;*/
+}
+.robot1{
+    #margin-top:30%;
+    #margin-left:37.5%;
+    width:85%;
+    height:25%;
+    margin-left:5%;
+    #float:left;
+    /*background-color:#434343;*/
+}
+
+.lathe21{
+    margin-top:5%;
+    width:85%;
+    height:25%;
+    margin-left:5%;
+    /*background-color:#434343;*/
+    #float:left;
+}
+
+.lathe24
+{
+    width:85%;
+    height:25%;
+    margin-left:5%;
+    #margin-top:5%;
+    #margin-left:40%;
+    #float:right;
+    /*background-color:#434343;*/
+}
+.robot2{
+    #margin-top:30%;
+    #margin-left:37.5%;
+    width:85%;
+    height:25%;
+    margin-left:5%;
+    #float:left;
+    /*background-color:#434343;*/
+}
+
+.lathe31{
+    margin-top:5%;
+    width:85%;
+    height:25%;
+    margin-left:5%;
+    /*background-color:#434343;*/
+    #float:left;
+}
+
+.lathe34
+{
+    width:85%;
+    height:25%;
+    margin-left:5%;
+    #margin-top:5%;
+    #margin-left:40%;
+    #float:right;
+    /*background-color:#434343;*/
+}
+.robot3{
+    #margin-top:30%;
+    #margin-left:37.5%;
+    width:85%;
+    height:25%;
+    margin-left:5%;
+    #float:left;
+    /*background-color:#434343;*/
+}
+.lathe41{
+    margin-top:5%;
+    width:85%;
+    height:25%;
+    margin-left:5%;
+    /*background-color:#434343;*/
+    #float:left;
+}
+
+.lathe44
+{
+    width:85%;
+    height:25%;
+    margin-left:5%;
+    #margin-top:5%;
+    #margin-left:40%;
+    #float:right;
+    /*background-color:#434343;*/
+}
+.robot4{
+    #margin-top:30%;
+    #margin-left:37.5%;
+    width:85%;
+    height:25%;
+    margin-left:5%;
+    #float:left;
+    /*background-color:#434343;*/
+}
+a{
+    text-decoration: none;
+    font-size:16px;
+    font-family:微软雅黑;
+}
+.AndonImage{
+    width:48%;
+    height:49%;
+    float:left;
+    /*background-color:#434343;*/
+    border:2px solid #edebea;
+    #background:url(../image/background21.jpg);
+
+
+}
+
+.anniu11{
+    margin-top:10%;
+    margin-left:1%;
+    width:90%;
+    height:20%;
+    background-color:rgba(0, 0, 0, 0.3);
+    color:#F1F7FA;
+    border:0px;
+    border-radius:10px;
+    font-size:130%;
+    font-family:微软雅黑;
+}
+.anniu12{
+    margin-top:10%;
+    margin-left:1%;
+    width:90%;
+    height:20%;
+    background-color:rgba(0, 0, 0, 0);
+    color:#F1F7FA;
+    border:0px;
+    border-radius:10px;
+    font-size:130%;
+    font-family:微软雅黑;
+}
+.anniu2{
+    margin-top:10%;
+    margin-left:1%;
+    width:15%;
+    height:5%;
+    background-color:#9F9F9F;
+    color:#F1F7FA;
+    border:0px;
+    border-radius:5px;
+
+}

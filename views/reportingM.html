@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8">
+    <title>Andon</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta http-equiv="content-type" content="text/html;charset=gb2312">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no' />
+
+    <!-- Loading Bootstrap -->
+    <!--<link href="stylesheets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="stylesheets/responsive-menu.css" rel="stylesheet">
+    <link href="stylesheets/styles.css" rel="stylesheet">
+
+    <script src="js/modernizr.min.js" type="text/javascript"></script>
+    <script src="js/modernizr-custom.js" type="text/javascript"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/responsive-menu.js" type="text/javascript"></script>
+
+    <!--<link href="stylesheets/flat-ui.css" rel="stylesheet">-->
+    <link href="stylesheets/demoM.css" rel="stylesheet">
+    <!--<script src="js/vendor/jquery.min.js"></script>-->
+    <!--<script src="js/flat-ui.min.js"></script>-->
+    <!--<script src="js/application.js"></script>-->
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+
+    <![endif]-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if (screen.width > 768) {
+                location.href = "/mainInterface";
+            }
+        })
+    </script>
+    <script>
+        jQuery(function ($) {
+            var menu = $('.rm-nav').rMenu({
+                minWidth: '960px',
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="quanbu" style="background-color: white">
+<header>
+    <div class="wrapper">
+        <div class="brand">
+            <p><a href="http://www.smart-flow.cn" class="logo">SmartFlow</a></p>
+        </div>
+
+        <div class="rm-container">
+            <a class="rm-toggle rm-button rm-nojs" href="#">导航菜单</a>
+
+            <nav class="rm-nav rm-nojs rm-lighten">
+                <ul>
+                    <li><a href="#">转向节自动化1线</a>
+                        <ul>
+                            <li><a href="/outputM/1/2">产量</a></li>
+                            <li><a href="/brokenDownTimeRate/1/2">故障率</a></li>
+                            <li><a href="/timeRate/1/2">时间稼动率</a></li>
+                            <li><a href="/performanceRate/1/2">性能嫁动率</a></li>
+                            <li><a href="/passRate/1/2">良品率</a></li>
+                            <li><a href="/oeeM/1/2">OEE</a></li>
+
+                        </ul></li>
+                    <li><a href="#">转向节自动化2线</a>
+                        <ul>
+                            <li><a href="/outputM/3/4">产量</a></li>
+                            <li><a href="/brokenDownTimeRate/3/4">故障率</a></li>
+                            <li><a href="/timeRate/3/4">时间稼动率</a></li>
+                            <li><a href="/performanceRate/3/4">性能嫁动率</a></li>
+                            <li><a href="/passRate/3/4">良品率</a></li>
+                            <li><a href="/oeeM/3/4">OEE</a></li>
+
+                        </ul></li>
+                    <li><a href="/productShiftInput">操作界面</a></li>
+                    <li><a href="/history">历史查询</a></li>
+                    <li><a href="/catalog">目录</a></li>
+                    <li><a href="/mainInterface">Andon</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<script>$(function() { $('pre').addClass('prettyprint');})</script>
+
+
+<!-- Static navbar -->
+<!--<div class="navbar navbar-default navbar-inverse" role="navigation">-->
+    <!--<div class="container">-->
+        <!--<div class="navbar-header">-->
+            <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">-->
+                <!--<span class="sr-only">Toggle navigation</span>-->
+            <!--</button>-->
+            <!--<a class="navbar-brand" href="http://www.smart-flow.cn">SmartFlow</a>-->
+        <!--</div>-->
+        <!--<div class="collapse navbar-collapse navbar-collapse-01">-->
+            <!--<ul class="nav navbar-nav navbar-left">-->
+                <!--<li class="dropdown"><a href="reportingM">Andon</a></li>-->
+                <!--<li class="dropdown">-->
+                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
+                        <!--Line1-->
+                        <!--<span class="caret"></span>-->
+                    <!--</a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="outputM">Output</a></li>-->
+                        <!--<li> <a href="cycletimeM">Cycletime</a></li>-->
+                        <!--<li><a href="oeeM">OEE</a></li>-->
+                        <!--<li> <a href="#fakelink">Downtime</a></li>-->
+                    <!--</ul> &lt;!&ndash; /Sub menu &ndash;&gt;-->
+                <!--</li>-->
+                <!--<li class="dropdown">-->
+                    <!--<a href="#fakelink" class="dropdown-toggle" data-toggle="dropdown">-->
+                        <!--Line2-->
+                        <!--<span class="caret"></span>-->
+                    <!--</a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="outputM">Output</a></li>-->
+                        <!--<li> <a href="cycletimeM">Cycletime</a></li>-->
+                        <!--<li><a href="oeeM">OEE</a></li>-->
+                        <!--<li> <a href="#fakelink">Downtime</a></li>-->
+                    <!--</ul> &lt;!&ndash; /Sub menu &ndash;&gt;-->
+                <!--</li>-->
+                <!--<li class="dropdown">-->
+                    <!--<a href="#fakelink" class="dropdown-toggle" data-toggle="dropdown">-->
+                        <!--Line3-->
+                        <!--<span class="caret"></span>-->
+                    <!--</a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="outputM">Output</a></li>-->
+                        <!--<li> <a href="cycletimeM">Cycletime</a></li>-->
+                        <!--<li><a href="oeeM">OEE</a></li>-->
+                        <!--<li> <a href="#fakelink">Downtime</a></li>-->
+                    <!--</ul> &lt;!&ndash; /Sub menu &ndash;&gt;-->
+                <!--</li>-->
+                <!--<li class="dropdown">-->
+                    <!--<a href="#fakelink" class="dropdown-toggle" data-toggle="dropdown">-->
+                        <!--Line4-->
+                        <!--<span class="caret"></span>-->
+                    <!--</a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="outputM">Output</a></li>-->
+                        <!--<li> <a href="cycletimeM">Cycletime</a></li>-->
+                        <!--<li><a href="oeeM">OEE</a></li>-->
+                        <!--<li> <a href="#fakelink">Downtime</a></li>-->
+                    <!--</ul> &lt;!&ndash; /Sub menu &ndash;&gt;-->
+                <!--</li>-->
+                <!--<li><a href="#fakelink">Tools</a></li>-->
+            <!--</ul>-->
+        <!--</div>&lt;!&ndash;/.nav-collapse &ndash;&gt;-->
+    <!--</div>-->
+<!--</div>-->
+    <div class="container">
+
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="" style="position: relative;">
+            <img src="image/2223.jpg" style="width: 100%;" />
+            <div style="position: absolute;z-index: 300;top: 0px;left: 0px;">
+                <div class="AndonImage1"	>
+                    <div class="lathe11"><img id="Station1" src="image/7.png"style="width:100%;height:100%;"></div>
+                    <div class="lathe12"><img id="Station2" src="image/8.png"style="width:100%;height:100%;"></div>
+                    <div class="robot1"> <img id="Station17" src="image/8.png"style="width:100%;height:100%;"></div>
+                    <div class="lathe13"><img id="Station3" src="image/6.png"style="width:100%;height:100%;"></div>
+                    <div class="lathe14"><img id="Station4" src="image/8.png"style="width:100%;height:100%;"></div>
+                </div>
+                <div class="AndonImage3">
+                    <div class="lathe31"><img id="Station5" src="image/8.png"style="width:100%;height:100%;"></div>
+                    <div class="lathe32"><img id="Station6" src="image/8.png"style="width:100%;height:100%;"></div>
+                    <div class="robot3"> <img id="Station18" src="image/6.png"style="width:100%;height:100%;"></div>
+                    <div class="lathe33"><img id="Station7" src="image/8.png"style="width:100%;height:100%;"></div>
+                    <div class="lathe34"><img id="Station8" src="image/8.png"style="width:100%;height:100%;"></div>
+
+                </div>
+                <div class="AndonImage2">
+                    <div class="lathe21"><img id="Station13" src="image/7.png"style="width:100%;height:100%;"></div>
+                    <div class="lathe22"><img id="Station14" src="image/8.png"style="width:100%;height:100%;"></div>
+                    <div class="robot2"> <img id="Station20" src="image/8.png"style="width:100%;height:100%;"></div>
+                    <div class="lathe23"><img id="Station15" src="image/8.png"style="width:100%;height:100%;"></div>
+                    <div class="lathe24"><img id="Station16" src="image/8.png"style="width:100%;height:100%;"></div>
+                </div>
+                <div class="AndonImage4">
+                    <div class="lathe41"><img id="Station9" src="image/7.png"style="width:100%;height:100%;"></div>
+                    <div class="lathe42"><img id="Station10" src="image/8.png"style="width:100%;height:100%;"></div>
+                    <div class="robot4"> <img id="Station19" src="image/8.png"style="width:100%;height:100%;"></div>
+                    <div class="lathe43"><img id="Station11" src="image/8.png"style="width:100%;height:100%;"></div>
+                    <div class="lathe44"><img id="Station12" src="image/8.png"style="width:100%;height:100%;"></div></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script>
+    //页面加载后用定时器定时用ajax获取stationId的status。
+    $(document).ready(function () {
+        $.ajax({
+            url: "/mainInterface/Andon?time="+  Date.parse(new Date()),//后台目标地址 后面加?time="+  Date.parse(new Date()),/ 避免缓存，每次请求最新数据
+            type: "get",//请求的方式
+            data: {},//需要发送到后台 的数据
+            success: function (arrStationStatus) {
+                //console.log("Station1",$("#Station1").val());
+
+                if(arrStationStatus[0].Station1 ==0){
+                    $("#Station1").attr('src','image/8.png');
+                }else if(arrStationStatus[0].Station1 ==1){
+                    $("#Station1").attr('src','image/7.png');
+                }else if(arrStationStatus[0].Station1 ==2){
+                    $("#Station1").attr('src','image/6.png');
+                }
+
+                if(arrStationStatus[0].Station2 ==0){
+                    $("#Station2").attr('src','image/8.png');
+                }else if(arrStationStatus[0].Station2 ==1){
+                    $("#Station2").attr('src','image/7.png');
+                }else if(arrStationStatus[0].Station2 ==2){
+                    $("#Station2").attr('src','image/6.png');
+                }
+
+                if(arrStationStatus[0].Station3 ==0){
+                    $("#Station3").attr('src','image/8.png');
+                }else if(arrStationStatus[0].Station3 ==1){
+                    $("#Station3").attr('src','image/7.png');
+                }else if(arrStationStatus[0].Station3 ==2){
+                    $("#Station3").attr('src','image/6.png');
+                }
+
+                if(arrStationStatus[0].Station4 ==0){
+                    $("#Station4").attr('src','image/8.png');
+                }else if(arrStationStatus[0].Station4 ==1){
+                    $("#Station4").attr('src','image/7.png');
+                }else if(arrStationStatus[0].Station4 ==2){
+                    $("#Station4").attr('src','image/6.png');
+                }
+
+                if(arrStationStatus[0].Station5 ==0){
+                    $("#Station5").attr('src','image/8.png');
+                }else if(arrStationStatus[0].Station5 ==1){
+                    $("#Station5").attr('src','image/7.png');
+                }else if(arrStationStatus[0].Station5 ==2){
+                    $("#Station5").attr('src','image/6.png');
+                }
+
+                if(arrStationStatus[0].Station6 ==0){
+                    $("#Station6").attr('src','image/8.png');
+                }else if(arrStationStatus[0].Station6 ==1){
+                    $("#Station6").attr('src','image/7.png');
+                }else if(arrStationStatus[0].Station6 ==2){
+                    $("#Station6").attr('src','image/6.png');
+                }
+
+                if(arrStationStatus[0].Station7 ==0){
+                    $("#Station7").attr('src','image/8.png');
+                }else if(arrStationStatus[0].Station7 ==1){
+                    $("#Station7").attr('src','image/7.png');
+                }else if(arrStationStatus[0].Station7 ==2){
+                    $("#Station7").attr('src','image/6.png');
+                }
+
+                if(arrStationStatus[0].Station8 ==0){
+                    $("#Station8").attr('src','image/8.png');
+                }else if(arrStationStatus[0].Station8 ==1){
+                    $("#Station8").attr('src','image/7.png');
+                }else if(arrStationStatus[0].Station8 ==2){
+                    $("#Station8").attr('src','image/6.png');
+                }
+
+                if(arrStationStatus[0].Station9 ==0){
+                    $("#Station9").attr('src','image/8.png');
+                }else if(arrStationStatus[0].Station9 ==1){
+                    $("#Station9").attr('src','image/7.png');
+                }else if(arrStationStatus[0].Station9 ==2){
+                    $("#Station9").attr('src','image/6.png');
+                }
+
+                if(arrStationStatus[0].Station10 ==0){
+                    $("#Station10").attr('src','image/8.png');
+                }else if(arrStationStatus[0].Station10 ==1){
+                    $("#Station10").attr('src','image/7.png');
+                }else if(arrStationStatus[0].Station10 ==2){
+                    $("#Station10").attr('src','image/6.png');
+                }
+
+                if(arrStationStatus[0].Station11 ==0){
+                    $("#Station11").attr('src','image/8.png');
+                }else if(arrStationStatus[0].Station11 ==1){
+                    $("#Station11").attr('src','image/7.png');
+                }else if(arrStationStatus[0].Station11 ==2){
+                    $("#Station11").attr('src','image/6.png');
+                }
+
+                if(arrStationStatus[0].Station12 ==0){
+                    $("#Station12").attr('src','image/8.png');
+                }else if(arrStationStatus[0].Station12 ==1){
+                    $("#Station12").attr('src','image/7.png');
+                }else if(arrStationStatus[0].Station12 ==2){
+                    $("#Station12").attr('src','image/6.png');
+                }
+
+                if(arrStationStatus[0].Station13 ==0){
+                    $("#Station13").attr('src','image/8.png');
+                }else if(arrStationStatus[0].Station13 ==1){
+                    $("#Station13").attr('src','image/7.png');
+                }else if(arrStationStatus[0].Station13 ==2){
+                    $("#Station13").attr('src','image/6.png');
+                }
+
+                if(arrStationStatus[0].Station14 ==0){
+                    $("#Station14").attr('src','image/8.png');
+                }else if(arrStationStatus[0].Station14 ==1){
+                    $("#Station14").attr('src','image/7.png');
+                }else if(arrStationStatus[0].Station14 ==2){
+                    $("#Station14").attr('src','image/6.png');
+                }
+
+                if(arrStationStatus[0].Station15 ==0){
+                    $("#Station15").attr('src','image/8.png');
+                }else if(arrStationStatus[0].Station15 ==1){
+                    $("#Station15").attr('src','image/7.png');
+                }else if(arrStationStatus[0].Station15 ==2){
+                    $("#Station15").attr('src','image/6.png');
+                }
+
+                if(arrStationStatus[0].Station16 ==0){
+                    $("#Station16").attr('src','image/8.png');
+                }else if(arrStationStatus[0].Station16 ==1){
+                    $("#Station16").attr('src','image/7.png');
+                }else if(arrStationStatus[0].Station16 ==2){
+                    $("#Station16").attr('src','image/6.png');
+                }
+
+                if(arrStationStatus[0].Station17 ==0){
+                    $("#Station17").attr('src','image/8.png');
+                }else if(arrStationStatus[0].Station17 ==1){
+                    $("#Station17").attr('src','image/7.png');
+                }else if(arrStationStatus[0].Station17 ==2){
+                    $("#Station17").attr('src','image/6.png');
+                }
+
+                if(arrStationStatus[0].Station18 ==0){
+                    $("#Station18").attr('src','image/8.png');
+                }else if(arrStationStatus[0].Station18 ==1){
+                    $("#Station18").attr('src','image/7.png');
+                }else if(arrStationStatus[0].Station18 ==2){
+                    $("#Station18").attr('src','image/6.png');
+                }
+
+                if(arrStationStatus[0].Station19 ==0){
+                    $("#Station19").attr('src','image/8.png');
+                }else if(arrStationStatus[0].Station19 ==1){
+                    $("#Station19").attr('src','image/7.png');
+                }else if(arrStationStatus[0].Station19 ==2){
+                    $("#Station19").attr('src','image/6.png');
+                }
+
+                if(arrStationStatus[0].Station20 ==0){
+                    $("#Station20").attr('src','image/8.png');
+                }else if(arrStationStatus[0].Station20 ==1){
+                    $("#Station20").attr('src','image/7.png');
+                }else if(arrStationStatus[0].Station20 ==2){
+                    $("#Station20").attr('src','image/6.png');
+                }
+
+
+            }
+        })
+        setInterval( function () {
+            $.ajax({
+                url: "/mainInterface/Andon?time="+  Date.parse(new Date()),//后台目标地址
+                type: "get",//请求的方式
+                data: {},//需要发送到后台 的数据
+                success: function (arrStationStatus) {
+                    //switch语句，处理结果
+                    //$(".lathe11").val(arrStationStatus[0]);
+                    //console.log("Station1",$("#Station1").val());
+
+                    if(arrStationStatus[0].Station1 ==0){
+                        $("#Station1").attr('src','image/8.png');
+                    }else if(arrStationStatus[0].Station1 ==1){
+                        $("#Station1").attr('src','image/7.png');
+                    }else if(arrStationStatus[0].Station1 ==2){
+                        $("#Station1").attr('src','image/6.png');
+                    }
+
+                    if(arrStationStatus[0].Station2 ==0){
+                        $("#Station2").attr('src','image/8.png');
+                    }else if(arrStationStatus[0].Station2 ==1){
+                        $("#Station2").attr('src','image/7.png');
+                    }else if(arrStationStatus[0].Station2 ==2){
+                        $("#Station2").attr('src','image/6.png');
+                    }
+
+                    if(arrStationStatus[0].Station3 ==0){
+                        $("#Station3").attr('src','image/8.png');
+                    }else if(arrStationStatus[0].Station3 ==1){
+                        $("#Station3").attr('src','image/7.png');
+                    }else if(arrStationStatus[0].Station3 ==2){
+                        $("#Station3").attr('src','image/6.png');
+                    }
+
+                    if(arrStationStatus[0].Station4 ==0){
+                        $("#Station4").attr('src','image/8.png');
+                    }else if(arrStationStatus[0].Station4 ==1){
+                        $("#Station4").attr('src','image/7.png');
+                    }else if(arrStationStatus[0].Station4 ==2){
+                        $("#Station4").attr('src','image/6.png');
+                    }
+
+                    if(arrStationStatus[0].Station5 ==0){
+                        $("#Station5").attr('src','image/8.png');
+                    }else if(arrStationStatus[0].Station5 ==1){
+                        $("#Station5").attr('src','image/7.png');
+                    }else if(arrStationStatus[0].Station5 ==2){
+                        $("#Station5").attr('src','image/6.png');
+                    }
+
+                    if(arrStationStatus[0].Station6 ==0){
+                        $("#Station6").attr('src','image/8.png');
+                    }else if(arrStationStatus[0].Station6 ==1){
+                        $("#Station6").attr('src','image/7.png');
+                    }else if(arrStationStatus[0].Station6 ==2){
+                        $("#Station6").attr('src','image/6.png');
+                    }
+
+                    if(arrStationStatus[0].Station7 ==0){
+                        $("#Station7").attr('src','image/8.png');
+                    }else if(arrStationStatus[0].Station7 ==1){
+                        $("#Station7").attr('src','image/7.png');
+                    }else if(arrStationStatus[0].Station7 ==2){
+                        $("#Station7").attr('src','image/6.png');
+                    }
+
+                    if(arrStationStatus[0].Station8 ==0){
+                        $("#Station8").attr('src','image/8.png');
+                    }else if(arrStationStatus[0].Station8 ==1){
+                        $("#Station8").attr('src','image/7.png');
+                    }else if(arrStationStatus[0].Station8 ==2){
+                        $("#Station8").attr('src','image/6.png');
+                    }
+
+                    if(arrStationStatus[0].Station9 ==0){
+                        $("#Station9").attr('src','image/8.png');
+                    }else if(arrStationStatus[0].Station9 ==1){
+                        $("#Station9").attr('src','image/7.png');
+                    }else if(arrStationStatus[0].Station9 ==2){
+                        $("#Station9").attr('src','image/6.png');
+                    }
+
+                    if(arrStationStatus[0].Station10 ==0){
+                        $("#Station10").attr('src','image/8.png');
+                    }else if(arrStationStatus[0].Station10 ==1){
+                        $("#Station10").attr('src','image/7.png');
+                    }else if(arrStationStatus[0].Station10 ==2){
+                        $("#Station10").attr('src','image/6.png');
+                    }
+
+                    if(arrStationStatus[0].Station11 ==0){
+                        $("#Station11").attr('src','image/8.png');
+                    }else if(arrStationStatus[0].Station11 ==1){
+                        $("#Station11").attr('src','image/7.png');
+                    }else if(arrStationStatus[0].Station11 ==2){
+                        $("#Station11").attr('src','image/6.png');
+                    }
+
+                    if(arrStationStatus[0].Station12 ==0){
+                        $("#Station12").attr('src','image/8.png');
+                    }else if(arrStationStatus[0].Station12 ==1){
+                        $("#Station12").attr('src','image/7.png');
+                    }else if(arrStationStatus[0].Station12 ==2){
+                        $("#Station12").attr('src','image/6.png');
+                    }
+
+                    if(arrStationStatus[0].Station13 ==0){
+                        $("#Station13").attr('src','image/8.png');
+                    }else if(arrStationStatus[0].Station13 ==1){
+                        $("#Station13").attr('src','image/7.png');
+                    }else if(arrStationStatus[0].Station13 ==2){
+                        $("#Station13").attr('src','image/6.png');
+                    }
+
+                    if(arrStationStatus[0].Station14 ==0){
+                        $("#Station14").attr('src','image/8.png');
+                    }else if(arrStationStatus[0].Station14 ==1){
+                        $("#Station14").attr('src','image/7.png');
+                    }else if(arrStationStatus[0].Station14 ==2){
+                        $("#Station14").attr('src','image/6.png');
+                    }
+
+                    if(arrStationStatus[0].Station15 ==0){
+                        $("#Station15").attr('src','image/8.png');
+                    }else if(arrStationStatus[0].Station15 ==1){
+                        $("#Station15").attr('src','image/7.png');
+                    }else if(arrStationStatus[0].Station15 ==2){
+                        $("#Station15").attr('src','image/6.png');
+                    }
+
+                    if(arrStationStatus[0].Station16 ==0){
+                        $("#Station16").attr('src','image/8.png');
+                    }else if(arrStationStatus[0].Station16 ==1){
+                        $("#Station16").attr('src','image/7.png');
+                    }else if(arrStationStatus[0].Station16 ==2){
+                        $("#Station16").attr('src','image/6.png');
+                    }
+
+                    if(arrStationStatus[0].Station17 ==0){
+                        $("#Station17").attr('src','image/8.png');
+                    }else if(arrStationStatus[0].Station17 ==1){
+                        $("#Station17").attr('src','image/7.png');
+                    }else if(arrStationStatus[0].Station17 ==2){
+                        $("#Station17").attr('src','image/6.png');
+                    }
+
+                    if(arrStationStatus[0].Station18 ==0){
+                        $("#Station18").attr('src','image/8.png');
+                    }else if(arrStationStatus[0].Station18 ==1){
+                        $("#Station18").attr('src','image/7.png');
+                    }else if(arrStationStatus[0].Station18 ==2){
+                        $("#Station18").attr('src','image/6.png');
+                    }
+
+                    if(arrStationStatus[0].Station19 ==0){
+                        $("#Station19").attr('src','image/8.png');
+                    }else if(arrStationStatus[0].Station19 ==1){
+                        $("#Station19").attr('src','image/7.png');
+                    }else if(arrStationStatus[0].Station19 ==2){
+                        $("#Station19").attr('src','image/6.png');
+                    }
+
+                    if(arrStationStatus[0].Station20 ==0){
+                        $("#Station20").attr('src','image/8.png');
+                    }else if(arrStationStatus[0].Station20 ==1){
+                        $("#Station20").attr('src','image/7.png');
+                    }else if(arrStationStatus[0].Station20 ==2){
+                        $("#Station20").attr('src','image/6.png');
+                    }
+                }
+            })
+        } , 10000 );
+
+    })
+
+</script>
+</html>
+
+
+
